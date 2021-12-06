@@ -12,7 +12,7 @@ public class Faixa_De_Tempo_Com_ChronoUnit {
 		
 		/*METODO ChronoUnit SERVE PARA CALCULÇAR A QUANTIDADE DE DIAS ENTRE DUAS DATAS */
 		
-	long dias = ChronoUnit.DAYS.between(LocalDate.parse("2021-12-01"), LocalDate.now());/*QUANTIDADE DE DIAS ENTRE AS DATAS*/
+	long dias = ChronoUnit.DAYS.between(LocalDate.parse("2020-12-01"), LocalDate.now());/*QUANTIDADE DE DIAS ENTRE AS DATAS*/
 	
 	System.out.println("Possui um Total de "+dias);
 		
