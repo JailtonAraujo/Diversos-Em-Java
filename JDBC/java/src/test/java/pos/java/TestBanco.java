@@ -36,6 +36,7 @@ public class TestBanco {
 		
 		for (User user : Usuarios) {
 			System.out.println(user);
+			System.out.println("===============================");
 		}
 		
 		
