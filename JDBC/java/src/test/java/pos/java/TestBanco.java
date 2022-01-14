@@ -17,7 +17,6 @@ public class TestBanco {
 		
 		User usuario = new User ();
 		
-		usuario.setId(3);
 		usuario.setNome("hugo");
 		usuario.setLogin("hugo@gmail.com");
 		
@@ -41,4 +40,53 @@ public class TestBanco {
 		
 		
 	}
+	
+	@Test
+	public void Atualizar() {
+		
+		UserDao dao = new UserDao();
+		
+		User usuario = new User();
+		
+		usuario.setId(2);
+		usuario.setNome("Mario farias");
+		usuario.setLogin("Mario@gmail.com");
+		
+		dao.Atualizar(usuario);
+	}
+	
+	@Test
+	public void Deletar() {
+		UserDao dao = new UserDao();
+		
+		dao.Deletar(4);
+	}
+	
+	
+	@Test
+	public void ConsultaInnerJoin() {
+		
+		UserDao dao = new UserDao();
+		
+		List<User> Usuarios = dao.ListaComTelefone();
+		
+		
+		for (User user : Usuarios) {
+			System.out.println(user);
+			System.out.println("================");
+			
+		}
+	}
+	
+	
+	@Test
+	public void qualquer() {
+		
+		User usuario = new User();
+		
+		usuario.getTelefone().setNumero("5465465454");
+		
+		System.out.println(usuario);
+	}
+	
 }
