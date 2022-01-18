@@ -30,7 +30,7 @@ public class TestBanco {
 		UserDao dao = new UserDao();
 		
 		List<User> Usuarios = new ArrayList<User>();
-		//jkbbhk
+		//jkb
 		Usuarios = dao.listar();
 		
 		for (User user : Usuarios) {
